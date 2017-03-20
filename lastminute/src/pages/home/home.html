@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <p ion-item *ngFor="let question of questions_list" (click)="questionSelected(question)">
+      {{ question.question_name }}
+    </p>
+  </ion-list>
+</ion-content>
